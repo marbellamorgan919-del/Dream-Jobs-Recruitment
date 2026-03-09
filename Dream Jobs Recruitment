@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Jobs Recruitment</title>
+<style>
+/* ======= CSS Styles ======= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+header {
+    background: #0073e6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.job {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #005bb5;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Dream Jobs Recruitment</h1>
+<nav>
+<ul>
+<li><a href="#jobs">Jobs</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="jobs">
+<h2>Available Positions</h2>
+<div class="job-list">
+  <!-- Software & IT -->
+  <div class="job"><h3>Front-End Developer</h3><p>Location: Central London | Full-time</p><button onclick="applyJob('Front-End Developer')">Apply Now</button></div>
+  <div class="job"><h3>Back-End Developer</h3><p>Location: Remote | Full-time</p><button onclick="applyJob('Back-End Developer')">Apply Now</button></div>
+  <div class="job"><h3>Full-Stack Developer</h3><p>Location: New York | Full-time</p><button onclick="applyJob('Full-Stack Developer')">Apply Now</button></div>
+  <div class="job"><h3>DevOps Engineer</h3><p>Location: Remote | Contract</p><button onclick="applyJob('DevOps Engineer')">Apply Now</button></div>
+  <div class="job"><h3>UI/UX Designer</h3><p>Location: London | Full-time</p><button onclick="applyJob('UI/UX Designer')">Apply Now</button></div>
+  <div class="job"><h3>Mobile App Developer</h3><p>Location: Remote | Part-time</p><button onclick="applyJob('Mobile App Developer')">Apply Now</button></div>
+
+  <!-- Marketing & Sales -->
+  <div class="job"><h3>SEO Specialist</h3><p>Location: Remote | Part-time</p><button onclick="applyJob('SEO Specialist')">Apply Now</button></div>
+  <div class="job"><h3>Digital Marketing Manager</h3><p>Location: London | Full-time</p><button onclick="applyJob('Digital Marketing Manager')">Apply Now</button></div>
+  <div class="job"><h3>Content Writer</h3><p>Location: Remote | Freelance</p><button onclick="applyJob('Content Writer')">Apply Now</button></div>
+  <div class="job"><h3>Sales Executive</h3><p>Location: Manchester | Full-time</p><button onclick="applyJob('Sales Executive')">Apply Now</button></div>
+  <div class="job"><h3>Social Media Manager</h3><p>Location: Remote | Full-time</p><button onclick="applyJob('Social Media Manager')">Apply Now</button></div>
+
+  <!-- Business & Management -->
+  <div class="job"><h3>Project Manager</h3><p>Location: London | Full-time</p><button onclick="applyJob('Project Manager')">Apply Now</button></div>
+  <div class="job"><h3>Business Analyst</h3><p>Location: Remote | Contract</p><button onclick="applyJob('Business Analyst')">Apply Now</button></div>
+  <div class="job"><h3>HR Manager</h3><p>Location: London | Full-time</p><button onclick="applyJob('HR Manager')">Apply Now</button></div>
+  <div class="job"><h3>Operations Manager</h3><p>Location: Manchester | Full-time</p><button onclick="applyJob('Operations Manager')">Apply Now</button></div>
+  <div class="job"><h3>Accountant</h3><p>Location: Remote | Full-time</p><button onclick="applyJob('Accountant')">Apply Now</button></div>
+
+  <!-- Finance & Legal -->
+  <div class="job"><h3>Financial Analyst</h3><p>Location: London | Full-time</p><button onclick="applyJob('Financial Analyst')">Apply Now</button></div>
+  <div class="job"><h3>Legal Counsel</h3><p>Location: Remote | Contract</p><button onclick="applyJob('Legal Counsel')">Apply Now</button></div>
+  <div class="job"><h3>Compliance Officer</h3><p>Location: London | Full-time</p><button onclick="applyJob('Compliance Officer')">Apply Now</button></div>
+
+  <!-- Healthcare -->
+  <div class="job"><h3>Nurse</h3><p>Location: London | Full-time</p><button onclick="applyJob('Nurse')">Apply Now</button></div>
+  <div class="job"><h3>Medical Assistant</h3><p>Location: Remote | Part-time</p><button onclick="applyJob('Medical Assistant')">Apply Now</button></div>
+  <div class="job"><h3>Pharmacist</h3><p>Location: London | Full-time</p><button onclick="applyJob('Pharmacist')">Apply Now</button></div>
+
+</div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>We connect top talent with top companies across tech, marketing, business, healthcare, and more. Easily update this section for your company’s vision and mission.</p>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form id="contactForm">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+
+<footer>
+<p>&copy; 2026 Dream Jobs Recruitment. All rights reserved.</p>
+</footer>
+
+<script>
+// ======= JavaScript =======
+// Apply Job Alert
+function applyJob(jobTitle) {
+    alert(`Thanks for applying to the ${jobTitle} position. We'll contact you soon!`);
+}
+
+// Contact Form Submission
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thank you! Your message has been sent.');
+});
+</script>
+
+<!-- Tawk.to Live Chat -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69aebeeeddd7fc1c34853608/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+</body>
+</html>
